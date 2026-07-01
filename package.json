@@ -1,5 +1,6 @@
 {
-  "name": "crypto_project",
+  "homepage": "https://bpanda23.github.io/test-react-template-app",
+  "name": "test_react_project",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -8,7 +9,10 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build",
-    "deploy": "npm run export && touch out/.nojekyll"
+    "deploy": "npm run export && touch out/.nojekyll",
+  "predeploy:gh": "npm run build",
+    "deploy:gh": "gh-pages -d build"
+    
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
