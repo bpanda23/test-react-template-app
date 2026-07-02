@@ -1,8 +1,7 @@
 "use client";
 import { getImagePath } from "@/lib/utils/imagePath";
 import axios from "axios";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import Loader from "../../shared/Loader";
@@ -55,15 +54,15 @@ const ForgotPassword = () => {
               data-wow-delay=".15s"
             >
               <div className="mb-10 text-center">
-                <Link href="/" className="mx-auto inline-block max-w-[160px]">
-                  <Image
+                <Link to="/" className="mx-auto inline-block max-w-[160px]">
+                  <img
                     src={getImagePath("/images/logo/logo.svg")}
                     alt="logo"
                     width={140}
                     height={30}
                     className="dark:hidden"
                   />
-                  <Image
+                  <img
                     src={getImagePath("/images/logo/logo-white.svg")}
                     alt="logo"
                     width={140}

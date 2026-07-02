@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { getImagePath } from "@/lib/utils/imagePath";
 import nextImg from "/public/images/documentation/Categories=Nextjs.svg";
 import reactImg from "/public/images/documentation/Categories=React.svg";
 import tailwindImg from "/public/images/documentation/Categories=Tailwind.svg";

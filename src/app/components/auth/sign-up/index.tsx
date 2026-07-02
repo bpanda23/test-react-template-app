@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 import SocialSignUp from '../SocialSignUp'
 import Logo from '../../layout/header/logo'
 import Loader from '../../shared/Loader'
@@ -68,7 +68,7 @@ const SignUp = () => {
 
       <p className='text-body-secondary text-white text-base'>
         Already have an account?
-        <Link href='/' className='pl-2 text-primary hover:underline'>
+        <Link to='/' className='pl-2 text-primary hover:underline'>
           Sign In
         </Link>
       </p>

@@ -1,8 +1,8 @@
 'use client'
-import { useTheme } from "next-themes";
+import { useState } from "react";
 
 const ThemeToggler = () => {
-  const { theme, setTheme } = useTheme();
+  const [theme, setTheme] = useState<"light" | "dark">("light");
   return (
     <button
       aria-label="theme toggler"

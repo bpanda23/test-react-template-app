@@ -1,7 +1,7 @@
 "use client";
 import { getImagePath } from "@/lib/utils/imagePath";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Image from "next/image";
+
 import { useState } from "react";
 
 const Banner = () => {

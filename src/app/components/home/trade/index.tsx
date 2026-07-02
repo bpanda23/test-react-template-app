@@ -1,5 +1,5 @@
 import { getImagePath } from "@/lib/utils/imagePath";
-import Image from "next/image";
+
 
 const Trade = () => {
   return (

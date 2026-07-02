@@ -1,9 +1,7 @@
 "use client";
 import { getImagePath } from "@/lib/utils/imagePath";
 import axios from "axios";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { Link, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import Loader from "../../shared/Loader";
@@ -19,7 +17,7 @@ const ResetPassword = ({ token }: { token: string }) => {
     email: "",
   });
 
-  const router = useRouter();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const verifyToken = async () => {
@@ -35,7 +33,7 @@ const ResetPassword = ({ token }: { token: string }) => {
         }
       } catch (error: any) {
         toast.error(error?.response?.data);
-        router.push("/forgot-password");
+        navigate("/forgot-password");
       }
     };
 
@@ -68,7 +66,7 @@ const ResetPassword = ({ token }: { token: string }) => {
       if (res.status === 200) {
         toast.success(res.data);
         setData({ newPassword: "", ReNewPassword: "" });
-        router.push("/signin");
+        navigate("/signin");
       }
 
       setLoader(false);
@@ -88,15 +86,15 @@ const ResetPassword = ({ token }: { token: string }) => {
               data-wow-delay=".15s"
             >
               <div className="mb-10 text-center">
-                <Link href="/" className="mx-auto inline-block max-w-[160px]">
-                  <Image
+                <Link to="/" className="mx-auto inline-block max-w-[160px]">
+                  <img
                     src={getImagePath("/images/logo/logo.svg")}
                     alt="logo"
                     width={140}
                     height={30}
                     className="dark:hidden"
                   />
-                  <Image
+                  <img
                     src={getImagePath("/images/logo/logo-white.svg")}
                     alt="logo"
                     width={140}

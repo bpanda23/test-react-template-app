@@ -1,7 +1,7 @@
 "use client";
 import { workdata } from "@/lib/data/pageData";
 import { getImagePath } from "@/lib/utils/imagePath";
-import Image from "next/image";
+
 
 const Work = () => {
   return (

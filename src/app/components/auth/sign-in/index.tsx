@@ -1,12 +1,7 @@
 "use client";
-import { signIn } from "next-auth/react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 import SocialSignIn from "../SocialSignIn";
 import Logo from "../../layout/header/logo";
-import Loader from "../../shared/Loader";
 
 const Signin = () => {
 

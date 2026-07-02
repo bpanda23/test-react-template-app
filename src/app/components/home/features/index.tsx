@@ -1,6 +1,6 @@
 "use client";
 import { Featuresdata } from "@/lib/data/pageData";
-import Image from "next/image";
+
 
 const Features = () => {
   return (

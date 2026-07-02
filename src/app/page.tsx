@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import Banner from "./components/home/hero";
 import Companies from "./components/home/companies";
 import Work from "./components/home/work";
@@ -8,10 +7,6 @@ import Simple from "./components/home/simple";
 import Trade from "./components/home/trade";
 import Faq from "./components/home/faq";
 import ContactForm from "./components/ContactForm";
-
-export const metadata: Metadata = {
-  title: "Crypto",
-};
 
 export default function Home() {
   return (

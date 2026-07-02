@@ -1,7 +1,7 @@
 "use client";
 import { Headerdata } from "@/lib/data/pageData";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Signin from "../../auth/sign-in";
 import SignUp from "../../auth/sign-up";

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { HeaderItem } from "../../../../types/menu";
 
 const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {

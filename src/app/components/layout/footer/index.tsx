@@ -2,8 +2,7 @@
 
 import { Footerlinkdata, Sociallinkdata } from "@/lib/data/pageData";
 import { getImagePath } from "@/lib/utils/imagePath";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (

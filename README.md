@@ -1,9 +1,9 @@
 # Crypto Next.js Project
 
- - [Demo](https://themewagon.github.io/crypto-nextjs/)
+ 
 
 #### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/crypto-nextjs/)
+ 
 
 
 ## Getting Started

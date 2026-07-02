@@ -7,7 +7,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Icon } from "@iconify/react";
-import Image from "next/image";
+
 
 const Faq = () => {
   return (

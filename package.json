@@ -1,18 +1,15 @@
 {
   "homepage": "https://bpanda23.github.io/test-react-template-app",
-  "name": "test_react_project",
+  "name": "test-react-template-app",
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next build",
-    "deploy": "npm run export && touch out/.nojekyll",
-  "predeploy:gh": "npm run build",
-    "deploy:gh": "gh-pages -d build"
-    
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
@@ -23,16 +20,18 @@
     "date-fns": "^3.4.0",
     "framer-motion": "^11.11.9",
     "gray-matter": "^4.0.3",
-    "next": "15.3.3",
-    "next-auth": "^4.24.7",
-    "next-themes": "^0.3.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.28.0",
+    "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "slick-carousel": "^1.8.1"
+  },
+  "overrides": {
+    "ajv": "8.20.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.7",
